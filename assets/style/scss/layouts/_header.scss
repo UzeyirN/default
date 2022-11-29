@@ -1,0 +1,82 @@
+
+@import '../base/typography';
+header{
+
+    .navbar{
+        padding: 11px 0;
+        width: 100%;
+        background-color: $primary-color;
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        z-index: 999;
+
+        .navbar-resp__menu{
+            display: none;
+        }
+        
+       
+
+        &-logo{
+            padding: 5px ;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+
+            svg{
+                width: 70%;
+                height: 70%;
+                position: relative;
+                right: 35px;
+            }
+        }
+        &-menu{
+        
+            ul{
+                display: flex;
+                justify-content: space-between;
+                gap: 30px;
+                height: 32px;
+                align-items: center;
+                color: $primary-font_color;
+                font-family: $primary-font;
+                margin-top: 5px;
+
+                a{
+                    color: $primary-font_color;
+
+                    &:hover{
+                        color: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width:768px) {
+
+        .navbar{
+            
+            .navbar-resp__menu{
+                i{
+                    display: block;
+                }
+                
+            }
+
+            &-menu{
+                display: none;
+
+            }
+
+            &-logo{
+                position: relative;
+
+                right: 100px;
+
+            }
+            
+        } 
+}
