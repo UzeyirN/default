@@ -1,21 +1,25 @@
-@import '../base/typography';
-@import '../abstracts/variables';
+.sec-2{
 
+    .sec-2__left-button{
+        display: flex;
+        justify-content: start;
+        gap: 0 10px;
 
-
-
-.btn{
-    padding: 25px 30px;
-    text-align: center;
-    font-weight: bold;
-    font-family:$primary-font;
-    color:$btn-primary__color;
-    border: none;
-    border-radius: 5px;
-    margin-top: 30px;
-
-    a{
-        color:$btn-primary__color ;
-    }
+        button{
+            margin-top: 20px;
+            padding: 15px 85px;
+            border: none;
+            border-radius: 15px;
     
+        }
+
+    }
+    .sec-2__right{
+       
+        button{
+            padding: 15px 85px;
+            border: none;
+            border-radius: 15px;
+        }
+    }
 }

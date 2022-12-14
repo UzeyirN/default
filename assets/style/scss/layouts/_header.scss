@@ -1,82 +1,95 @@
-
 @import '../base/typography';
-header{
 
-    .navbar{
-        padding: 11px 0;
+header {
+    font-family: $main-font;
+   
+    .header-top {
         width: 100%;
-        background-color: $primary-color;
-        display: flex;
-        justify-content: space-around;
-        position: fixed;
-        z-index: 999;
-
-        .navbar-resp__menu{
-            display: none;
-        }
+        background-color: #3648b2;
+        padding: 11px 0;
         
-       
 
-        &-logo{
-            padding: 5px ;
+        .header-top__social {
             display: flex;
             justify-content: start;
-            align-items: center;
 
-            svg{
-                width: 70%;
-                height: 70%;
-                position: relative;
-                right: 35px;
-            }
-        }
-        &-menu{
-        
-            ul{
-                display: flex;
-                justify-content: space-between;
-                gap: 30px;
-                height: 32px;
-                align-items: center;
-                color: $primary-font_color;
-                font-family: $primary-font;
-                margin-top: 5px;
-
-                a{
-                    color: $primary-font_color;
-
-                    &:hover{
-                        color: $secondary-color;
-                    }
+            a{
+                &:hover{
+                    color: #3648b2;
                 }
+
+
+                i {
+                    margin: 0 10px;
+                    color: white;
+    
+    
+                }
+            }
+
+            
+        }
+
+        .header-top__contact {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            color: white;
+            i{
+                color: red;
+            }
+
+
+
+            .header-phone{
+                margin: 0 15px 0 0;
             }
         }
     }
 
-}
-
-@media (max-width:768px) {
-
+    .header-bottom{
+        
+        
         .navbar{
-            
-            .navbar-resp__menu{
-                i{
-                    display: block;
+            padding: 30px 0;
+
+            .navbar-nav{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 0 10px;
+
+                li{
+                    text-transform:uppercase ;
+                    color: rgba(0,0,0,.55);
                 }
-                
-            }
-
-            &-menu{
-                display: none;
-
-            }
-
-            &-logo{
-                position: relative;
-
-                right: 100px;
-
             }
             
-        } 
+            .search-button{
+                padding: 5px 50px ;
+                border-radius: 15px ;
+                background-color: red;
+                color: white;
+                border: none;
+            }
+
+            .container{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 }
